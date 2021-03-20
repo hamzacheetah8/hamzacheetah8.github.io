@@ -1,0 +1,54 @@
+/**
+ * DEFINE SECTION
+ * Reusable values, variables, transitions
+ */	
+
+:root {
+	--app-width: 100%;
+	--app-height: 100vh;
+	--def-rem: .8vw;
+	--color-primary: rgb(63, 115, 168);
+	--color-secondary: rgb(63, 165, 223);
+	--color-muted: rgba(215, 220, 250, .8);
+	--color-bg: rgb(255, 255, 255);
+	--slider-height: calc(40vh);
+}
+
+/**
+ * GENERAL SECTION
+ * Contains main DOM elements
+ */
+
+* {
+	box-sizing: border-box; 
+	margin: 0; 
+	padding: 0;
+}
+
+html {
+	font-family: "Source Sans Pro";
+	font-size: var(--def-rem);
+}
+
+/**
+ * MAIN SECTION
+ * Application main content
+ */
+
+.shape {
+	width: var(--app-width);
+	height: var(--app-height);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.shape__root {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	background-image: radial-gradient(#337b94, #0c1f3c);
+}
